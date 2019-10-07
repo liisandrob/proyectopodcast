@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans&display=swap');
+
+$width-mobile: 600px;
+
+body{
+    background: white;
+    color: #060A24;
+    list-style-type: none;
+    font-family: ibm plex mono;
+    font-size: 16px;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+h1{
+    font-size: 64px;
+    font-family: ibm plex sans;
+}
+
+h2{
+    font-size: 48px;
+    font-family: ibm plex sans;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    @media screen and (max-width: $width-mobile) {
+        flex-direction: column;
+        padding: 0;
+    }
+
+}
+
+.botones {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5%;
+    img{
+        height: 50px;
+        width: 50px;
+    }
+    .burger {
+        cursor: pointer;
+        display: none;
+        @media screen and (max-width: $width-mobile) {
+            display: inline-block;        
+            }
+    }
+    .cruz {
+        cursor: pointer;
+        display: none;
+    }
+}
+
+.nav {
+    @media screen and (max-width: $width-mobile){
+        display: none;
+        width: 100%;
+    }
+}
+
+#menu-toggle {
+    display: none;
+    &:checked ~ .nav{
+        display: block;
+    }
+    &:checked ~ div .burger{
+        display: none;
+    }
+    &:checked ~ div .cruz{
+        display: block;
+        @media screen and (min-width: $width-mobile) {
+            display: none;
+        }
+    }
+}
+
+
+.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    @media screen and (max-width: $width-mobile){
+        background-color: #0000EC;
+    }
+    li{
+        display: inline-block;
+        padding: 15px;
+        @media screen and (max-width: $width-mobile){
+            display: block;
+        }
+        a{
+            text-decoration: none;
+            color: #060A24;
+            &:hover{
+                text-decoration: line-through;
+                color: #00F3BB;
+            }
+            &:active{
+                text-decoration: line-through;
+                color: #060a248f;
+            }
+            @media screen and (max-width: $width-mobile){
+                color: #FFFFFF;
+            }
+        }
+    }
+}
+
+.home{
+    margin-left: 5%;
+    p{
+        width: 40%;
+        @media screen and (max-width: $width-mobile) {
+            width: 80%;
+        }
+    }
+    div{
+        margin-top: 5%;
+     }
+}
+
+.hist-img {
+    position: relative;
+    margin-top: -100px;
+}
+
+.episodios{
+    background: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+    width: 100%;
+    height: auto;
+    clip-path: polygon(0 5%,0 100%, 100% 95%, 100% 0);
+    display: flex;
+    flex-direction: column;
+    h2{
+        padding-top: 10%;
+        padding-left: 5%;
+    }
+}
+
+.cont-episodios{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 15%;
+    @media screen and (max-width: $width-mobile) {
+        box-sizing: border-box;
+        padding: 0 5%;
+    }
+    iframe{
+        margin: 5% 0;
+    }
+}
+
+.cont-nos{
+    display: flex;
+    justify-content: space-around;
+    @media screen and (max-width: $width-mobile) {
+        flex-direction: column;
+        aside{
+            width: 80%;
+            margin: 10% auto;
+        }
+    }
+}
+
+#historia{
+    width: auto;
+    height: 660px;
+    @media screen and (max-width: $width-mobile){
+        width: 80%;
+        height: auto;
+        margin-top: -50px;
+    }
+}
+
+aside{
+    width: 30%;
+    padding: 10% 0;
+}
+
+#invitadas {
+    h2{
+    padding-left: 5%;
+    }
+    p{
+        width: 100%;
+    }
+    img{
+        width: 33.33%;
+        height: auto;
+        float: left;
+        @media screen and (max-width: $width-mobile) {
+            width: 100%;
+        }
+    }
+}
+
+.topics{
+    margin-top: 60%;
+    margin-bottom: 5%;
+    display: block;
+    text-align: center;
+    @media screen and (max-width: $width-mobile) {
+        margin-top: 470%;
+    }
+}
+
+.tab-topics{
+    display: flex;
+    justify-content: space-around;
+    @media screen and (max-width: $width-mobile) {
+        flex-direction: column;
+    }
+}
+
+.novedades{
+    background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+    justify-content: center;
+    text-align: center;
+    clip-path: polygon(0% 15%, 0% 100%, 100% 100%, 100% 0%);
+    height: 300px;
+    width: auto;
+    @media screen and (max-width: $width-mobile) {
+        display: flex;
+        height:350px ;
+    }
+    div{
+        padding-top: 8%;
+        @media screen and (max-width: $width-mobile){
+            padding-top: 15%;
+        }
+    }
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 3%;
+    @media screen and (max-width: $width-mobile) {
+        flex-direction: column;
+    }
+    p{
+        @media screen and (max-width: $width-mobile) {
+            text-align: center;
+        }
+    }
+    .social {
+        @media screen and (max-width: $width-mobile) {
+            text-align: center;
+            padding: 0;
+        }
+        li {
+        display:inline;
+        padding: 0 10px;
+        @media screen and (max-width: $width-mobile) {
+            padding: 0 3%;
+        }
+        }
+        img{
+        display: inline-block;
+        height: 20px;
+        }
+    }
+}
+
+
+
+.boton{
+    background: #00F3BB;
+    text-decoration: none;
+    color: #060A24;
+    padding: 16px 59px;
+    size: 18px;
+    &:hover{
+        background: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
+        text-decoration: none;
+        color: #FFFFFF;
+        padding: 16px 59px;
+        size: 18px;
+    }
+}
+
+#dot{
+    color: #0000EC;
+}
+
+.blanco{
+    color: white;
+}
+
+img{
+    display: inline;
+}

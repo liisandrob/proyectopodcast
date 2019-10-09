@@ -236,7 +236,10 @@ aside{
         height:350px ;
     }
     div{
-        padding-top: 8%;
+        padding-top: 6%;
+        @media screen and (max-width: $width-mobile){
+            padding-top: 4%;
+        }
     }
 }
 

@@ -7,9 +7,9 @@ body {
   font-family: ibm plex mono;
   font-size: 16px;
   width: 100%;
-  padding: 0;
-  margin: 0;
   max-width: 1440px;
+  padding: 0;
+  margin: 0 auto;
 }
 
 h1 {
@@ -31,7 +31,7 @@ header {
           justify-content: space-between;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
   header {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -62,7 +62,7 @@ header {
   font-size: 46px;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
   .botones .burger {
     display: inline-block;
   }
@@ -74,7 +74,7 @@ header {
   font-size: 46px;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
   .nav {
     display: none;
     width: 100%;
@@ -97,7 +97,7 @@ header {
   display: block;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 700px) {
   #menu-toggle:checked ~ div .cruz {
     display: none;
   }
@@ -109,7 +109,7 @@ header {
   padding: 0;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
   .menu {
     background-color: #0000EC;
   }
@@ -120,7 +120,7 @@ header {
   padding: 15px;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
   .menu li {
     display: block;
   }
@@ -141,7 +141,7 @@ header {
   color: #060a248f;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
   .menu li a {
     color: #FFFFFF;
   }
@@ -155,7 +155,7 @@ header {
   width: 40%;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
   .home p {
     width: 80%;
   }
@@ -165,7 +165,7 @@ header {
   margin: 7% 0;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
   .home div {
     margin: 10% 0;
   }
@@ -208,7 +208,7 @@ header {
   margin-bottom: 15%;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
   .cont-episodios {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
@@ -228,7 +228,7 @@ header {
       justify-content: space-around;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
   .cont-nos {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -246,7 +246,7 @@ header {
   height: 660px;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
   #historia {
     width: 80%;
     height: auto;
@@ -255,8 +255,10 @@ header {
 }
 
 aside {
+  position: relative;
   width: 30%;
   padding: 10% 0;
+  margin-top: -70px;
 }
 
 #invitadas h2 {
@@ -273,7 +275,7 @@ aside {
   float: left;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
   #invitadas img {
     width: 100%;
   }
@@ -286,7 +288,7 @@ aside {
   text-align: center;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
   .topics {
     margin-top: 470%;
   }
@@ -300,7 +302,7 @@ aside {
       justify-content: space-around;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
   .tab-topics {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -321,7 +323,7 @@ aside {
   width: auto;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
   .novedades {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -334,7 +336,7 @@ aside {
   padding-top: 6%;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
   .novedades div {
     padding-top: 4%;
   }
@@ -350,7 +352,7 @@ footer {
   padding: 0 3%;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
   footer {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -359,16 +361,19 @@ footer {
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
   footer p {
     text-align: center;
   }
 }
 
-@media screen and (max-width: 600px) {
+footer .social {
+  padding: 0;
+}
+
+@media screen and (max-width: 700px) {
   footer .social {
     text-align: center;
-    padding: 0;
   }
 }
 
@@ -377,15 +382,16 @@ footer .social li {
   padding: 0 10px;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
   footer .social li {
     padding: 0 3%;
   }
 }
 
-footer .social img {
-  display: inline-block;
-  height: 20px;
+footer .social li a {
+  color: #060A24;
+  size: 1rem;
+  text-decoration: none;
 }
 
 .boton {

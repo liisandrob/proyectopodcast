@@ -15,8 +15,12 @@
             <input type="checkbox" id="menu-toggle"/>
             <div class="botones">
                 <img src="assets/logo.svg" alt="logo del canal">
-                <label class="burger" for="menu-toggle" ><i class="fa fa-bars"></i></label>
-                <label class="cruz" for="menu-toggle"><i class="fa fa-times"></i></label>
+                <label class="burger" for="menu-toggle" >
+                    <i class="fa fa-bars"></i>
+                </label>
+                <label class="cruz" for="menu-toggle">
+                    <i class="fa fa-times"></i>
+                </label>
             </div>
             <nav class="nav">
                 <ul class="menu">
@@ -31,19 +35,17 @@
         <section class="home">
             <h1>Hello <s>world</s> pale blue dot <span id="dot">.</span></h1>
             <p>El portal de podcasts que explora el mundo de la programación y la tecnología, todos los jueves cada 15 días.</p>
-            <div>
-                <a class="boton" href="#topics">CONOCÉ MAS</a>
+            <div class="boton">
+                <a href="#topics">CONOCÉ MAS</a>
             </div>
         </section>
         <section class="episodios">
-                <div>
-                    <h2 class="blanco" id="episodios">Episodios</h2>
-                    <div  class="cont-episodios">
-                            <iframe src="https://open.spotify.com/embed-podcast/show/2ySVrxGkN6n6frMTo9Nsrt" width="584px" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-                            <iframe src="https://open.spotify.com/embed-podcast/show/4kYCRYJ3yK5DQbP5tbfZby" width="584px" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-                            <iframe src="https://open.spotify.com/embed-podcast/show/5JxcIaIkN8zx3Zy7yD9snv" width="584px" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-                            <iframe src="https://open.spotify.com/embed-podcast/show/2Iibd5A6R7mxkCm4NwNmUn" width="584px" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-                    </div>
+            <h2 class="blanco" id="episodios">Episodios</h2>
+                <div  class="cont-episodios">
+                    <iframe src="https://open.spotify.com/embed-podcast/show/2ySVrxGkN6n6frMTo9Nsrt" scrolling="no" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                    <iframe src="https://open.spotify.com/embed-podcast/show/4kYCRYJ3yK5DQbP5tbfZby" scrolling="no" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                    <iframe src="https://open.spotify.com/embed-podcast/show/5JxcIaIkN8zx3Zy7yD9snv" scrolling="no" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                    <iframe src="https://open.spotify.com/embed-podcast/show/2Iibd5A6R7mxkCm4NwNmUn" scrolling="no" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
                 </div>
         </section>
         <section class="nosotros">
@@ -56,16 +58,16 @@
                 </aside>
             </div>
         </section>
-        <section id="invitadas">
+        <section id="invitadas" class="invitadas">
             <h2>Invitadas/os estelares</h2>
-                <p>
-                    <img src="assets/img1.png" alt="Grace Hopper">
-                    <img src="assets/img2.png" alt="Katie Bouman">
-                    <img src="assets/img3.png" alt="Margaret Hamilton">
-                    <img src="assets/img4.png" alt="Computadora E.R.A.Univac 1103 en los 1950s">
-                    <img src="assets/img5.png" alt="Operadores de computadora con una Enirac">
-                    <img src="assets/img6.png" alt="Susan Kare">
-                </p>
+            <div class="cont-img">
+                <img src="assets/img1.png" alt="Grace Hopper">
+                <img src="assets/img2.png" alt="Katie Bouman">
+                <img src="assets/img3.png" alt="Margaret Hamilton">
+                <img src="assets/img4.png" alt="Computadora E.R.A.Univac 1103 en los 1950s">
+                <img src="assets/img5.png" alt="Operadores de computadora con una Enirac">
+                <img src="assets/img6.png" alt="Susan Kare">
+            </div>
         </section>
         <section class="topics" id="topics">
             <h2>Algunos de nuestros temas</h2>
@@ -75,7 +77,7 @@
                     <td><img src="assets/icon1.svg" alt="Trabajo remoto"></td>
                 </tr>
                 <tr>
-                    <td>Trabajo remoto</td>
+                    <td><b>Trabajo remoto</b></td>
                 </tr>
             </table>
             <table>
@@ -83,7 +85,7 @@
                     <td><img src="assets/icon2.svg" alt="Repensando la programación"></td>
                 </tr>
                 <tr>
-                    <td>Repensando la programación</td>
+                    <td><b>Repensando la programación</b></td>
                 </tr>
             </table>
             <table>
@@ -91,7 +93,7 @@
                     <td><img src="assets/icon3.svg" alt="Bases del código"></td>
                 </tr>
                 <tr>
-                    <td>Bases del código</td>
+                    <td><b>Bases del código</b></td>
                 </tr>
             </table>
             <table>
@@ -99,16 +101,14 @@
                     <td><img src="assets/icon4.svg" alt="Seguridad informática"></td>
                 </tr>
                 <tr>
-                    <td>Seguridad informática</td>
+                    <td><b>Seguridad informática</b></td>
                 </tr>
             </table>
             </div>
         </section>
         <section class="novedades">
-            <div>
-                <h2 class="blanco">¿Quéres las últimas novedades?</h2>
-                <a class="boton" href="#episodios">ESCUCHÁ LOS EPISODIOS</a>
-            </div>
+            <h2 class="blanco">¿Quéres las últimas novedades?</h2>
+            <a class="boton" href="#episodios">ESCUCHÁ LOS EPISODIOS</a>
         </section>
     </main>
     <footer>
